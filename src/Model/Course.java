@@ -1,36 +1,30 @@
 package Model;
 
-import java.time.LocalDate;
-
 public class Course {
 
     private String courseId;
     private String courseName;
     private double price;
-    private LocalDate startDate;
-    private LocalDate endDate;
+    private String time;
     private Coach coach;
     private Workout exercise;
 
     public Course() {
     }
 
-    public Course(String courseId, String courseName, double price, LocalDate startDate, LocalDate endDate, Coach coach, Workout exercise) {
+    public Course(String courseId, String courseName, double price, String time, Coach coach, Workout exercise) {
         this.courseId = courseId;
         this.courseName = courseName;
         this.price = price;
-        this.startDate = startDate;
-        this.endDate = endDate;
+        this.time = time;
         this.coach = coach;
         this.exercise = exercise;
     }
 
     @Override
     public String toString() {
-        return "Course{" + "courseId=" + courseId + ", courseName=" + courseName + ", price=" + price + ", startDate=" + startDate + ", endDate=" + endDate + ", coach=" + coach + ", exercise=" + exercise + '}';
+        return "Course{" + "courseId=" + courseId + ", courseName=" + courseName + ", price=" + price + ", time=" + time + ", coach=" + coach + ", exercise=" + exercise + '}';
     }
-    
-    
 
     public double getPrice() {
         return price;
@@ -56,20 +50,12 @@ public class Course {
         this.courseName = courseName;
     }
 
-    public LocalDate getStartDate() {
-        return startDate;
+    public String getTime() {
+        return time;
     }
 
-    public void setStartDate(LocalDate startDate) {
-        this.startDate = startDate;
-    }
-
-    public LocalDate getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(LocalDate endDate) {
-        this.endDate = endDate;
+    public void setTime(String time) {
+        this.time = time;
     }
 
     public Coach getCoach() {
