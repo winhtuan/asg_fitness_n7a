@@ -10,12 +10,12 @@ public class Course {
     private LocalDate startDate;
     private LocalDate endDate;
     private Coach coach;
-    private Exercise exercise;
+    private Workout exercise;
 
     public Course() {
     }
 
-    public Course(String courseId, String courseName, double price, LocalDate startDate, LocalDate endDate, Coach coach, Exercise exercise) {
+    public Course(String courseId, String courseName, double price, LocalDate startDate, LocalDate endDate, Coach coach, Workout exercise) {
         this.courseId = courseId;
         this.courseName = courseName;
         this.price = price;
@@ -80,11 +80,11 @@ public class Course {
         this.coach = coach;
     }
 
-    public Exercise getExercise() {
+    public Workout getExercise() {
         return exercise;
     }
 
-    public void setExercise(Exercise exercise) {
+    public void setExercise(Workout exercise) {
         this.exercise = exercise;
     }
 

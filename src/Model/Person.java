@@ -2,19 +2,38 @@ package Model;
 
 public class Person {
 
-    private String fullName;
+    private String personId;
+    private String personName;
     private String phoneNumber;
-    private boolean sex;
+    private String sex;
     private int age;
 
     public Person() {
     }
 
-    public Person(String fullName, String phoneNumber, boolean sex, int age) {
-        this.fullName = fullName;
+    public Person(String personName, String sex) {
+        this.personName = personName;
+        this.sex = sex;
+    }
+
+    public Person(String personName) {
+        this.personName = personName;
+    }
+
+    public Person(String personId, String personName, String phoneNumber, String sex, int age) {
+        this.personId = personId;
+        this.personName = personName;
         this.phoneNumber = phoneNumber;
         this.sex = sex;
         this.age = age;
+    }
+
+    public String getPersonId() {
+        return personId;
+    }
+
+    public void setPersonId(String personId) {
+        this.personId = personId;
     }
 
     public int getAge() {
@@ -25,12 +44,12 @@ public class Person {
         this.age = age;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getPersonName() {
+        return personName;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setPersonName(String fullName) {
+        this.personName = fullName;
     }
 
     public String getPhoneNumber() {
@@ -41,11 +60,11 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
-    public boolean isSex() {
+    public String isSex() {
         return sex;
     }
 
-    public void setSex(boolean sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 

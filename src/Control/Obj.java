@@ -38,7 +38,7 @@ public class Obj extends Menu {
             }
             case 9 -> {
             }
-            case 0 ->
+            case 10 ->
                 System.exit(0);
             default ->
                 System.out.println("Invalid choice! Please try again.");
