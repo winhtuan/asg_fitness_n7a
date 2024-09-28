@@ -43,7 +43,7 @@ public class Gym {
                         "Friday", Arrays.asList("Tricep Dips", "Pull-ups"))
         );
 
-        Workout calorieBurningWorkout = new Workout(
+        Workout calorieWorkout = new Workout(
                 "Burn calories",
                 new HashSet<>(Arrays.asList("Running", "Jump Rope", "Burpees")),
                 Arrays.asList("Balanced meals", "High fiber, low sugar"),
@@ -70,13 +70,13 @@ public class Gym {
         Course absCourse = new Course("C01", "Abs Course", 500.0, "2 months", coachAbs, absWorkout);
         Course legCourse = new Course("C02", "Legs Course", 450.0, "2 months", coachLegs, legWorkout);
         Course armCourse = new Course("C03", "Arms Course", 400.0, "1.5 months", coachArms, armWorkout);
-        Course calorieBurningCourse = new Course("C04", "Calorie-Burning Course", 550.0, "3 months", coachCalories, calorieBurningWorkout);
+        Course calorie = new Course("C04", "Calorie-Burning Course", 550.0, "3 months", coachCalories, calorieWorkout);
         Course yogaCourse = new Course("C05", "Yoga Course", 600.0, "3 months", coachYoga, yogaWorkout);
 
         courses.put(absCourse.getCourseId(), absCourse);
         courses.put(legCourse.getCourseId(), legCourse);
         courses.put(armCourse.getCourseId(), armCourse);
-        courses.put(calorieBurningCourse.getCourseId(), calorieBurningCourse);
+        courses.put(calorie.getCourseId(), calorie);
         courses.put(yogaCourse.getCourseId(), yogaCourse);
     }
 
