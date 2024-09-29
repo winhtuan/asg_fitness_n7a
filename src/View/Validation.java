@@ -8,8 +8,15 @@ import java.util.Scanner;
 public class Validation {
 
     private Scanner sc = new Scanner(System.in);
-
-    public <T> T getValue(String msg, Class<T> type) {
+    /**
+     * Cách Dùng
+     * Type int: int value = valid.getValue("Enter the value: ", Integer.class);
+     * Type double: double value = valid.getValue("Enter the value: ", Double.class);
+     * @param msg 
+     * @param type
+     * @return 
+     */
+    public <T> T getValue(String msg, Class<T> type) { 
         while (true) {
             try {
                 System.out.print(msg);

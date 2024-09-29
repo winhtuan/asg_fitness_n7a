@@ -1,21 +1,18 @@
 package Model;
 
-import Repository.FileManager;
 import View.Validation;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 
-public class Gym {
+public class Gym{
 
     private Map<String, Course> courses;
-    private FileManager fileManager;
     private Validation valid;
 
     public Gym() {
         courses = new HashMap<>();
-        fileManager = new FileManager();
         valid = new Validation();
 
         // Create Workout object for each Course
@@ -85,7 +82,7 @@ public class Gym {
         Gym g = new Gym();
         System.out.println("List of Courses:");
         g.courses.forEach((key, value) -> {
-            System.out.println("ID: " + key + ", Course Name: " + value.getCourseName());
+            System.out.println(value.getCourseName());
         });
     }
 }
